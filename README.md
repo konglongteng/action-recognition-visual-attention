@@ -11,12 +11,12 @@ attention depending on the scene and the action being performed.
 
 ## Dependencies
 
-* Python 2.7
-* [NumPy](http://www.numpy.org/)
-* [scikit learn](http://scikit-learn.org/stable/index.html)
-* [skimage](http://scikit-image.org/docs/dev/api/skimage.html)
-* [Theano](http://www.deeplearning.net/software/theano/)
-* [h5py](http://docs.h5py.org/en/latest/)
+* Python 2.7 We have Anaconda
+* [NumPy](http://www.numpy.org/) ignore
+* [scikit learn](http://scikit-learn.org/stable/index.html) ignore
+* [skimage](http://scikit-image.org/docs/dev/api/skimage.html) ignore
+* [Theano](http://www.deeplearning.net/software/theano/)  0.9 is ok
+* [h5py](http://docs.h5py.org/en/latest/) require
 
 ## Input data format
 
