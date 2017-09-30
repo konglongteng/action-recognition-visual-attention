@@ -1,3 +1,4 @@
+###code for features is in the extractfeat directory, we use caffe and googlenet
 ### Data Format
 The `train_features.h5` file is an HDF5 file with `DATATYPE H5T_IEEE_F32LE` and its `DATASPACE` is `SIMPLE { ( #frames, 7*7*1024 ) / ( H5S_UNLIMITED, H5S_UNLIMITED ) }` and `DATASET "features"`.
 
@@ -23,7 +24,7 @@ The `train_labels.txt`file for uni-label datasets looks like
 7
 43
 ```
-and for multi-label datasets:
+and for multi-label datasets:   IS FOR HOLLYWOOD2,NOTE
 ```
 0,0,0,0,0,0,0,1,0,0,0,0
 0,0,0,0,0,0,0,1,0,0,0,0
@@ -35,6 +36,7 @@ The same format is required for the validation and test files too.
 ### data_handler.py
 We have used `order='F'` in all our `numpy.reshape()` calls since we created our data file using Matlab which uses the Fortran indexing order.
 You will have to remove this parameter if that is not the case with you.
+Ignore this
 
 ### GPU locking
 Toronto ML users need not make any modifications. The script locks a free GPU automatically.
