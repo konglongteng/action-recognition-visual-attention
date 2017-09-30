@@ -100,11 +100,11 @@ class DataHandler(object):
         break
 
     if data_pb.dataset=='ucf11':
-      self.batch_data_ = self.batch_data_.reshape([self.batch_data_.shape[0],self.batch_data_.shape[1],49,1024],order='F').astype('float32')
+      self.batch_data_ = self.batch_data_.reshape([self.batch_data_.shape[0],self.batch_data_.shape[1],49,1024]).astype('float32')
     elif data_pb.dataset=='h2mAP':
-      self.batch_data_ = self.batch_data_.reshape([self.batch_data_.shape[0],self.batch_data_.shape[1],49,1024],order='F').astype('float32')
+      self.batch_data_ = self.batch_data_.reshape([self.batch_data_.shape[0],self.batch_data_.shape[1],49,1024]).astype('float32')
     elif data_pb.dataset=='hmdb51gln':
-      self.batch_data_ = self.batch_data_.reshape([self.batch_data_.shape[0],self.batch_data_.shape[1],49,1024],order='F').astype('float32')
+      self.batch_data_ = self.batch_data_.reshape([self.batch_data_.shape[0],self.batch_data_.shape[1],49,1024]).astype('float32')
 
     self.batch_label_ = self.batch_label_.astype('int64')
     return self.batch_data_, self.batch_label_, n_examples
@@ -143,11 +143,11 @@ class DataHandler(object):
       self.batch_data_[n:,0, :] = np.tile(self.batch_data_[n-1,0, :],(self.seq_length_-n,1))
 
     if data_pb.dataset=='ucf11':
-      data_ = data_.reshape([data_.shape[0],data_.shape[1],49,1024],order='F').astype('float32')
+      data_ = data_.reshape([data_.shape[0],data_.shape[1],49,1024]).astype('float32')
     elif data_pb.dataset=='h2mAP':
-      data_ = data_.reshape([data_.shape[0],data_.shape[1],49,1024],order='F').astype('float32')
+      data_ = data_.reshape([data_.shape[0],data_.shape[1],49,1024]).astype('float32')
     elif data_pb.dataset=='hmdb51gln':
-      data_ = data_.reshape([data_.shape[0],data_.shape[1],49,1024],order='F').astype('float32')
+      data_ = data_.reshape([data_.shape[0],data_.shape[1],49,1024]).astype('float32')
 
     f.close()
 
