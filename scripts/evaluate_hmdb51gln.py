@@ -68,7 +68,7 @@ if __name__ == '__main__':
         'optimizer': ['sgd'],
         'batch_size': [128],
         'valid_batch_size': [256],
-        'model': ['model_hmdb51.npz'],
+        'model': ['model_hmdb51.npz'], #This is hollywood2 dataset
         'validFreq': [500],
         'saveFreq': [500],		# save the parameters after every saveFreq updates
         'dataset': ['hmdb51gln'],
